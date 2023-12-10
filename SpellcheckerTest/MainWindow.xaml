@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox Name="txtInput" SpellCheck.IsEnabled="True" 
+        <TextBox Name="txtFFmpegCommand" SpellCheck.IsEnabled="True" 
                  Width="500" Height=" 50"
                  TextWrapping="Wrap"
                  AcceptsReturn ="True"
-                 TextChanged="txtInput_TextChanged"/>
+                 TextChanged="ffmpegComand_TextChanged"/>
     </Grid>
 </Window>

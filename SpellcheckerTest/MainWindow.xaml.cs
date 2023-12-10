@@ -25,35 +25,37 @@ namespace SpellcheckerTest
             InitializeComponent();
         }
 
-        private void txtInput_TextChanged(object sender, TextChangedEventArgs e)
+        private void ffmpegComand_TextChanged(object sender, TextChangedEventArgs e)
         {
+
+
             // スペルチェッカーのカスタム処理を呼び出す
-            RunSpellCheck(txtInput.Text);
+          //  RunSpellCheck(txtInput.Text);
         }
 
-        private void RunSpellCheck(string text)
-        {
-            // ここでカスタムのスペルチェッカーを実装する
-            // 例: 簡易なスペルチェッカー
-            List<string> dictionary = new List<string> { "apple", "orange", "banana" };
-            string[] words = text.Split(' ');
+       //private void RunSpellCheck(string text)
+       // {
+       //     // ここでカスタムのスペルチェッカーを実装する
+       //     // 例: 簡易なスペルチェッカー
+       //     List<string> dictionary = new List<string> { "apple", "orange", "banana" };
+       //     string[] words = text.Split(' ');
 
            
 
-            foreach (string word in words)
-            {
-                if (!dictionary.Contains(word.ToLower()))
-                {
-                    // スペルミスが検出された場合の処理
-                    // 例: 背景色を変更する
-                    txtInput.Background = Brushes.LightPink;
-                }
-                else
-                {
-                    // スペルが正しい場合の処理
-                    txtInput.Background = Brushes.White;
-                }
-            }
-        }
+       //     foreach (string word in words)
+       //     {
+       //         if (!dictionary.Contains(word.ToLower()))
+       //         {
+       //             // スペルミスが検出された場合の処理
+       //             // 例: 背景色を変更する
+       //             txtInput.Background = Brushes.LightPink;
+       //         }
+       //         else
+       //         {
+       //             // スペルが正しい場合の処理
+       //             txtInput.Background = Brushes.White;
+       //         }
+       //     }
+       // }
     }
 }
