@@ -1,6 +1,12 @@
-﻿namespace SpellcheckerTest
+﻿using System.Text;
+using Microsoft.VisualStudio.Text;
+
+namespace SpellcheckerTest
 {
-    internal interface ITextBuffer
+
+    public class CustomTextBuffer : ITextBuffer
     {
+        private StringBuilder buffer;
+
     }
 }

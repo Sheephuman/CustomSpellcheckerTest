@@ -24,6 +24,7 @@ namespace SpellcheckerTest
         {
             InitializeComponent();
         }
+        private ITextBuffer textBuffer;
 
         private void ffmpegComand_TextChanged(object sender, TextChangedEventArgs e)
         {
